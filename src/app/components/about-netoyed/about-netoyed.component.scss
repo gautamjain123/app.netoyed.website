@@ -21,6 +21,30 @@
     line-height: normal;
     letter-spacing: -3px;
 }
+
+.count-text{
+    color: #D12930;
+    text-align: center;
+    font-family: "Bricolage Grotesque";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.count-label{
+    color: #000;
+text-align: center;
+font-family: "Libre Baskerville";
+font-size: 24px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+}
+.counter-div{
+    display: flex;
+    gap: 50px;
+    padding-top: 33px;
+}
 .cards-div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -83,9 +107,15 @@
     flex: 1;
     min-height: 71px;
     background-color: #D12930;
-    transform: translateX(-100%); /* Start off-screen to the left */
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
   }
+  .hover-slider1,
+.hover-slider2,
+.hover-slider3,
+.hover-slider4,
+.hover-slider5 {
+  transform: translateX(-100%); /* Start off-screen to the left */
+  transition: transform 0.5s ease; /* Smooth sliding transition */
+}
   
   .first-card:hover .hover-slider5 {
     transform: translateX(0); /* Slide in from left */
@@ -106,10 +136,16 @@
     transform: translateX(0); /* Slide in from left */
     transition-delay: 0.3s; /* Slight delay for sequential effect */
   }
-  .first-card:hover{
+  
+  .first-card:hover .hover-slider1 {
+    transform: translateX(0); /* Slide in from left */
+    transition-delay: 0.4s; /* Slight delay for sequential effect */
+  }
+.first-card:hover{
     .first-card-logo{
         filter: invert(1);
         transition-delay: 0.4s; /* Slight delay for sequential effect */
+        transform: scale(1.1);
       }
       .card-heading{
         color: #FFF;
@@ -118,13 +154,35 @@
       .learn-text{
         color: #FFF;
       }
+      img.first-card-img{
+        transform: scale(1.1); /* Scales the image to 1.5 times its original size on hover */
+      }
       
   }
-  .first-card:hover .hover-slider1 {
-    transform: translateX(0); /* Slide in from left */
-    transition-delay: 0.4s; /* Slight delay for sequential effect */
-    
-}
+.first-card .hover-slider5 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0.4s; /* Delay for sequential slide out */
+  }
+  
+  .first-card .hover-slider4 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0.3s; /* Delay for sequential slide out */
+  }
+  
+  .first-card .hover-slider3 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0.2s; /* Delay for sequential slide out */
+  }
+  
+  .first-card .hover-slider2 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0.1s; /* Delay for sequential slide out */
+  }
+  
+  .first-card .hover-slider1 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0s; /* No delay for the first element */
+  }
   .logo-text-div{
     max-width: 298px;
     height: 355px;
@@ -173,5 +231,8 @@
   }
   img.star-slide-in {
     opacity: 0;
+  }
+  img.first-card-img{
+    transition: transform 0.3s ease; /* Smooth transition */
   }
 
