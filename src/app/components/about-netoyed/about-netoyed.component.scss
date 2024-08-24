@@ -21,3 +21,218 @@
     line-height: normal;
     letter-spacing: -3px;
 }
+
+.count-text{
+    color: #D12930;
+    text-align: center;
+    font-family: "Bricolage Grotesque";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.count-label{
+    color: #000;
+text-align: center;
+font-family: "Libre Baskerville";
+font-size: 24px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+}
+.counter-div{
+    display: flex;
+    gap: 50px;
+    padding-top: 33px;
+}
+.cards-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.card-design{
+    min-width: 300px;
+    min-height: 355px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #CFCFCF;
+    background: #FFF;
+    overflow: hidden;
+    
+}
+.card-design:hover{
+    box-shadow: 0px 4px 10.3px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease-in-out;
+}
+.second-card{
+    transform: translateY(72px);
+}
+.third-card{
+    transform: translateY(104px);
+}
+.fourth-card{
+    transform: translateY(41px);
+}
+.hover-slider1{
+    min-height: 71px;
+    background-color: #D12930;
+}
+.hover-slider2{
+    min-height: 71px;
+    background-color: #D12930;
+}
+.hover-slider3{
+    min-height: 71px;
+    background-color: #D12930;
+}
+.hover-slider4{
+    min-height: 71px;
+    background-color: #D12930;
+}
+.hover-slider5{
+    min-height: 71px;
+    background-color: #D12930;
+}
+
+.first-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden; /* Ensure elements don't overflow outside the container */
+  }
+  
+  .first-card .col-md {
+    flex: 1;
+    min-height: 71px;
+    background-color: #D12930;
+  }
+  .hover-slider1,
+.hover-slider2,
+.hover-slider3,
+.hover-slider4,
+.hover-slider5 {
+  transform: translateX(-100%); /* Start off-screen to the left */
+  transition: transform 0.5s ease; /* Smooth sliding transition */
+}
+  
+  .first-card:hover .hover-slider5 {
+    transform: translateX(0); /* Slide in from left */
+    transition-delay: 0s; /* No delay for the first element */
+  }
+  
+  .first-card:hover .hover-slider4 {
+    transform: translateX(0); /* Slide in from left */
+    transition-delay: 0.1s; /* Slight delay for sequential effect */
+  }
+  
+  .first-card:hover .hover-slider3 {
+    transform: translateX(0); /* Slide in from left */
+    transition-delay: 0.2s; /* Slight delay for sequential effect */
+  }
+  
+  .first-card:hover .hover-slider2 {
+    transform: translateX(0); /* Slide in from left */
+    transition-delay: 0.3s; /* Slight delay for sequential effect */
+  }
+  
+  .first-card:hover .hover-slider1 {
+    transform: translateX(0); /* Slide in from left */
+    transition-delay: 0.4s; /* Slight delay for sequential effect */
+  }
+.first-card:hover{
+    .first-card-logo{
+        filter: invert(1);
+        transition-delay: 0.4s; /* Slight delay for sequential effect */
+        transform: scale(1.1);
+      }
+      .card-heading{
+        color: #FFF;
+        transition-delay: 0.2s;
+      }
+      .learn-text{
+        color: #FFF;
+      }
+      img.first-card-img{
+        transform: scale(1.1); /* Scales the image to 1.5 times its original size on hover */
+      }
+      
+  }
+.first-card .hover-slider5 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0.4s; /* Delay for sequential slide out */
+  }
+  
+  .first-card .hover-slider4 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0.3s; /* Delay for sequential slide out */
+  }
+  
+  .first-card .hover-slider3 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0.2s; /* Delay for sequential slide out */
+  }
+  
+  .first-card .hover-slider2 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0.1s; /* Delay for sequential slide out */
+  }
+  
+  .first-card .hover-slider1 {
+    transform: translateX(-100%); /* Slide out to the left */
+    transition-delay: 0s; /* No delay for the first element */
+  }
+  .logo-text-div{
+    max-width: 298px;
+    height: 355px;
+    padding: 20px 0px 0px 20px;
+    overflow: hidden;
+    border-radius: 14px;
+  }
+ .card-heading{
+    color: #212121;
+    font-family: "Bricolage Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-wrap: wrap;
+ }
+ .learn-text{
+    color: #000000;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    z-index: 1;
+    position: static;
+ }
+ @keyframes starslideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-90px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-75px);
+    }
+  }
+  
+  .learn-text-div:hover{
+    img.star-slide-in {
+        opacity: 0;
+        animation: starslideInFromLeft 1s ease-out forwards; /* 'ease-out' for a smoother end */
+      }
+  }
+  img.star-slide-in {
+    opacity: 0;
+  }
+  img.first-card-img{
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+
