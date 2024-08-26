@@ -1,7 +1,22 @@
 .navbar-brand{
     color: rgb(255, 255, 255);
 }
+.netoyed-logo{
+    filter: invert(1);
+}
+.n1-logo{
+    width: 100px;
+    top: -8px;
+    right: 9px;
+}
+.n2-logo{
+    width: 117px;
+    transition: filter 0.3s ease;
 
+}
+.inverted {
+    filter: invert(1);
+  }
 .btn-dark {
     --bs-btn-color: #ffffff;
      --bs-btn-bg: #ffffff00;
@@ -41,6 +56,7 @@
     .dropdown-toggle::after {
      color: #000;
     }
+    transition: all 0.5s ease-in-out;
 }
 .navbar-text{
     color: #FFF;
