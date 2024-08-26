@@ -1,13 +1,14 @@
-import { Component , HostListener, OnInit, ElementRef, Renderer2} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component , HostListener, OnInit, ElementRef, Renderer2 ,AfterViewInit,} from '@angular/core';
 
 @Component({
   selector: 'app-main-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './main-header.component.html',
   styleUrl: './main-header.component.scss'
 })
-export class MainHeaderComponent {
+export class MainHeaderComponent{
 
   private headerElement!: HTMLElement;
 
@@ -26,5 +27,5 @@ export class MainHeaderComponent {
     }
   }
 
-
+  
 }
