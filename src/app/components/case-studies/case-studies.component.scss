@@ -1,0 +1,40 @@
+section.spacer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.image-unmask {
+height: 100vh;
+overflow: hidden;
+position: relative;
+}
+.ourproject-lineone{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.5vw;
+}
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #D12930;
+  }
+#img {
+position: fixed;
+top: 50%;
+left: 50%;
+z-index: -1;
+transform: translate(-50%, -50%);
+}
+
+section.image-unmask .scroll-center-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1; /* Ensures text is above the image */
+color: black; /* Adjust color for better visibility */
+text-align: center;
+max-width: 20%; /* Optional: Limit text width for better readability */
+margin: 0;
+}

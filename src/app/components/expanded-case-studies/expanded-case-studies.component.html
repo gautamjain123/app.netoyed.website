@@ -1,0 +1,21 @@
+<section>
+    <div class="case-main-div container position-relative">
+        <h1 class="section-heading-text">Case Studies</h1> 
+       <div class="tabs-outer-div">
+        <div class="tabs-group">
+            <button type="button" class="btn btn-outline-secondary active" *ngFor="let tab of tabsdata" (click)="onTabSelect(tab.id)" 
+            [ngClass]="{'tab-button': true, 'active': isActive(tab.id)}"><span class="button-text">{{tab.buttonname}}</span></button>
+        </div>
+       </div>
+        <div  class="case-cards-section mt-5">
+            <div class="case-card-style" *ngFor="let card of getFilteredCardData()" [ngStyle]="{'background-image': card.backgroundImage}">
+                <span class="hover1">{{ card.hover1 }}</span>
+                <span class="card-title">{{ card.title }}</span>
+                <span class="hover-2">{{ card.hover2 }}</span>
+            </div>
+        </div>
+        <div class="read-more-div d-flex flex-column align-items-center pt-5 pb-5">
+            <button type="button" class="btn btn-danger">Read More</button>
+        </div>
+    </div>
+</section>

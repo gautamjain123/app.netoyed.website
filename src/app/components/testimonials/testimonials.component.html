@@ -1,0 +1,32 @@
+<div class="testimonial">
+    <h1 class="testimonial-heading"> <span class="ourclients">What are our <span class="onlyclient">Clients</span> are saying</span> </h1>
+    <div class="cards-div" id="slider" (mousedown)="startDrag($event)" (mouseup)="endDrag()" (mouseleave)="endDrag()" (mousemove)="drag($event)">
+      <div *ngFor="let card of testimonials; let i = index" 
+           [ngClass]="getCardClass(i)"
+           class="testi-card">
+        <div class="innercard">
+          <div class="contentcard">
+            <p>{{ card.text }}</p>
+            <div class="name">
+              <h5>{{ card.name }}</h5>
+              <h6>{{ card.designation }}</h6>
+            </div>
+            <div class="logoimg">
+              <img [src]="card.logo" alt="Logo" />
+            </div>
+          </div>
+          <div class="imgcard">
+            <img [src]="card.image" alt="Image" />
+          </div>
+        </div>
+      </div>
+      <div class="arrow arrow-left" (click)="moveLeft()">
+        <img src="../../../assets/icons/arrow-left.svg" alt="Left Arrow" />
+      </div>
+      <div class="arrow arrow-right" (click)="moveRight()">
+        <img src="../../../assets/icons/arrow-right.svg" alt="Right Arrow" />
+      </div>
+    </div>
+    <div class="testi-ellipse"></div>
+  </div>
+  

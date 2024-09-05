@@ -36,8 +36,8 @@
     cursor: pointer;
 }
 .floating-logo{
-    top: 70px;
-    right: -5rem;
+    top: 119px;
+    right: -3rem;
 }
 .banner-btn-div{
     margin-top: 80px;
@@ -145,24 +145,30 @@ button.btn.banner-button {
   }
 }
 
-.fade-in {
+.fade-in1 ,.fade-in2,.fade-in3,.fade-in4,.fade-in5,.fade-in6 {
   opacity: 0; /* Initial state */
   animation: fadeIn 1s forwards;
 }
 
-.fade-in:nth-child(1) {
+.fade-in1 {
   animation-delay: 1s;
 }
 
-.fade-in:nth-child(2) {
+.fade-in2 {
   animation-delay: 1.5s;
 }
 
-.fade-in:nth-child(3) {
+.fade-in3 {
   animation-delay: 2s;
 }
-.fade-in:nth-child(4) {
+.fade-in4 {
   animation-delay: 2.5s;
+}
+.fade-in5 {
+  animation-delay: 3s;
+}
+.fade-in6 {
+  animation-delay: 3.5s;
 }
 
 @keyframes logoslideInFromLeft {

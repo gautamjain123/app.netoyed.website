@@ -1,0 +1,241 @@
+/* Include all the CSS styles from your original code here */
+.testimonial-heading{
+    margin-bottom: 60px;
+}
+.ourclients{
+    color: #212121;
+    text-align: center;
+    font-family: "Bricolage Grotesque";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -3px;
+}
+.onlyclient{
+    color: #212121;
+    font-family: "Libre Baskerville";
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3px;
+}
+.testimonial {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Add all other styles here */
+  .testimonial {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.cards-div {
+    position: relative;
+    width: 80vw;
+    max-width: 1060px;
+    min-height: 430px;
+    cursor: grab;
+    margin: 5px 75px 30px;
+}
+
+.testi-card {
+    width: 80vw;
+    max-width: 1060px;
+    min-height: 430px;
+    border-radius: 16px;
+    border: 1px solid #A6A6A6;
+    background-color: #FFF;
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    transition: all 0.5s ease;
+}
+
+.testi-card.inactive {
+    transform: scale(0.9);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.testi-card.active {
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.09);
+    transform: rotate(0deg) translateX(0) scale(1);
+    z-index: 9999;
+    opacity: 1;
+}
+
+.testi-card.left-neighbor {
+    transform: rotate(-2deg) translate(-80px, 5px) scale(0.95);
+    z-index: 2;
+}
+
+.testi-card.right-neighbor {
+    transform: rotate(2deg) translate(80px, 5px) scale(0.95);
+    z-index: 2;
+}
+
+.testi-card.second-left-neighbor {
+    transform: rotate(-3deg) translate(-140px, 10px) scale(0.9);
+    z-index: 1;
+}
+
+.testi-card.second-right-neighbor {
+    transform: rotate(3deg) translate(140px, 10px) scale(0.9);
+    z-index: 1;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.arrow-left {
+    left: -25px;
+}
+
+.arrow-right {
+    right: -25px;
+}
+
+.innercard {
+width: 100%;
+min-height: 430px;
+box-sizing: content-box;
+display: flex;
+flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+}
+
+.contentcard {
+width: 60%;
+padding: 4% 3% 3% 4%;
+box-sizing: border-box; /* Ensures padding is included in the width */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.contentcard p {
+color: #212121;
+text-align: justify;
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 10px;
+}
+
+.contentcard h5 {
+color: #212121;
+font-size: 22px;
+font-weight: 700;
+}
+
+.contentcard h6 {
+color: #6B6B6B;
+font-size: 16px;
+font-weight: 500;
+}
+
+.imgcard {
+width: 40%;
+position: relative;
+display: flex;
+align-items: flex-end; /* Aligns the image at the bottom of the container */
+justify-content: end;
+}
+
+.imgcard img {
+
+border-radius: 16px;
+overflow: hidden;
+z-index: 2;
+max-height:400px;
+}
+
+@media (max-width: 1060px) {
+.innercard {
+flex-direction: column; /* Stacks content on smaller screens */
+justify-content: center;
+}
+
+.contentcard{
+width: 100%;
+padding: 5% 4% 4% 5%;
+}
+.imgcard{
+margin: auto;
+width: 80%;
+}
+.imgcard img{
+border-radius: 0px;
+}
+}
+@media (max-width: 700px) {
+.contentcard p {
+font-size: 14px;
+}
+.contentcard{
+padding: 7% 5% 5% 7%;
+}
+.contentcard h5 {
+font-size: 16px;
+}
+
+.contentcard h6 {
+font-size: 12px;
+}
+.testi-card.left-neighbor {
+    transform: rotate(-2deg) translate(-40px, 5px) scale(0.95);
+    z-index: 2;
+}
+
+.testi-card.right-neighbor {
+    transform: rotate(2deg) translate(40px, 5px) scale(0.95);
+    z-index: 2;
+}
+
+.testi-card.second-left-neighbor {
+    transform: rotate(-3deg) translate(-70px, 10px) scale(0.9);
+    z-index: 1;
+}
+
+.testi-card.second-right-neighbor {
+    transform: rotate(3deg) translate(70px, 10px) scale(0.9);
+    z-index: 1;
+}
+}
+.testi-card .innercard{
+opacity: 0;
+transition: all 0.3s ease;
+}
+.testi-card.active .innercard{
+opacity: 1;
+}
+.testi-ellipse{
+    position: absolute;
+    width: 1000px;
+height: 700px;
+flex-shrink: 0;
+top: 5%;
+border-radius: 1254px;
+background: radial-gradient(57.19% 57.19% at 50% 47.81%, rgba(255, 112, 95, 0.20) 19.05%, rgba(240, 167, 238, 0.00) 86.89%);
+}

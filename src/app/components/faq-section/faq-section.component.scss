@@ -1,0 +1,150 @@
+.faq-main-div{
+   margin-top: 170px; 
+}
+.faq-heading-text{
+    color: #212121;
+    font-family: "Bricolage Grotesque";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -3px;
+}
+.faq-content{
+    color: #6B6B6B;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 34px */
+    letter-spacing: 0.2px;
+}
+.question-text{
+    color: #212121;
+    font-family: "Bricolage Grotesque";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.btn-outline-secondary {
+    --bs-btn-color: #000000;
+    --bs-btn-border-color: #6c757d00;
+    --bs-btn-hover-color: #D12930;
+    --bs-btn-hover-bg: rgba(197, 76, 62, 0.10);
+    --bs-btn-hover-border-color: #D12930;
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: #D12930;
+    --bs-btn-active-bg: rgba(197, 76, 62, 0.10);
+    --bs-btn-active-border-color: #D12930;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #6c757d;
+    --bs-gradient: none;
+}
+button.btn.btn-outline-secondary {
+    width: fit-content;
+    padding: 8px 15px 8px 15px;
+}
+.button-text{
+    color:  #D12930;
+    text-align: center;
+    font-family: "Bricolage Grotesque";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 36px */
+    letter-spacing: 0.2px;
+}
+.accordion-item {
+    border: 0px;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+     border-top-left-radius: 18px; 
+     border-top-right-radius: 18px; 
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.accordion-body {
+    border: 1px solid black;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+button.accordion-button.collapsed {
+    background-color:#1D0756;
+    border-radius: 18px;
+}
+.accordian-title{
+    color: #FFF;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%; /* 34px */
+    letter-spacing: 0.2px;
+}
+.accordian-section{
+    position: relative;
+}
+div#accordionPanelsStayOpenExample {
+    position: relative;
+    z-index: 4;
+}
+.ellipse-gradient{  
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    width: 700px;
+    height: 479px;
+    border-radius: 1254px;
+    background: radial-gradient(57.19% 57.19% at 50% 47.81%, rgba(255, 112, 95, 0.20) 19.05%, rgba(240, 167, 238, 0.00) 86.89%);
+}
+
+.accordion {
+    --bs-accordion-color: var(--bs-body-color);
+    --bs-accordion-bg: var(--bs-body-bg);
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: var(--bs-border-color);
+    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: var(--bs-body-color);
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    --bs-accordion-btn-icon: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2234%22%20height%3D%2234%22%20viewBox%3D%220%200%2034%2034%22%20fill%3D%22none%22%3E%3Cmask%20id%3D%22mask0_2079_996%22%20style%3D%22mask-type%3Aalpha%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2234%22%20height%3D%2234%22%3E%3Crect%20width%3D%2234%22%20height%3D%2234%22%20fill%3D%22%23D9D9D9%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url%28%23mask0_2079_996%29%22%3E%3Cpath%20d%3D%22M15.584%2018.4168H7.08398V15.5835H15.584V7.0835H18.4173V15.5835H26.9173V18.4168H18.4173V26.9168H15.584V18.4168Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E
+    );
+    --bs-accordion-btn-icon-width: 2rem;
+    --bs-accordion-btn-icon-transform: rotate(-45deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2234%22%20height%3D%2234%22%20viewBox%3D%220%200%2034%2034%22%20fill%3D%22none%22%3E%3Cmask%20id%3D%22mask0_2079_996%22%20style%3D%22mask-type%3Aalpha%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2234%22%20height%3D%2234%22%3E%3Crect%20width%3D%2234%22%20height%3D%2234%22%20fill%3D%22%23D9D9D9%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url%28%23mask0_2079_996%29%22%3E%3Cpath%20d%3D%22M15.584%2018.4168H7.08398V15.5835H15.584V7.0835H18.4173V15.5835H26.9173V18.4168H18.4173V26.9168H15.584V18.4168Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E
+    );
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: var(--bs-primary-text-emphasis);
+    --bs-accordion-active-bg: #110335;
+}
+.connectbtn{
+    border-radius: 4px;
+    border: 1px solid #000;
+    color: #1D1D1D;
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 500;
+}
+.faq-title-div{
+    position: relative;
+}
+.faq-ellipse{
+    position: absolute;
+    width: 700px;
+    height: 479px;
+    border-radius: 1254px;
+    background: radial-gradient(57.19% 57.19% at 50% 47.81%, rgba(255, 112, 95, 0.20) 19.05%, rgba(240, 167, 238, 0.00) 86.89%);
+    filter: blur(65.5px);
+    right: 57%;
+}
